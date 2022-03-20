@@ -2,16 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="IT school from Belarus" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <meta name="author" content="John Doe" />
+    <meta name="description" content="First form" />
+    <meta name="keywords" content="HTML, Form, table, list" />
+    <meta name="author" content="Dmitry Komzolov" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson 1</title>
   </head>
   <body>
     <h1>Моя первая страница</h1>
     <p><a href="about\index.html">Об авторе</a></p>
-    <hr />
+  </body>
+  <hr />
+  <body>
     <ol>
       <li>
         Знакомство с web.
@@ -94,36 +96,90 @@
       </tfoot>
     </table>
     <form>
-      <p>
-        <label for="name">Name</label> <br />
-        <input id="name" name="name" type="text" required placeholder="Name" />
-        <br />
-        <label for="email">Email</label> <br />
-        <input id="email" name="email" type="email" required /> <br />
-        <label for="password">Password</label> <br />
-        <input id="password" name="password" type="password" required /> <br />
-        <label for="programming">Your programming lvl</label> <br />
-        <input
-          id="programming"
-          name="programming"
-          type="range"
-          min="0"
-          max="10"
-        />
-      </p>
-      <p>
-        <label for="comment">Comment</label><br>
-        <textarea id="comment" name="comment" maxlength="500">Comment</textarea> <br>
-        <label for="What does"> What does HTML stand for? </label> <br>
-        <select id="What does" name="What does">
-          <option disabled selected>Your answer</option>
-          <option>Hyper Text Markup Language</option>
-          <option>Hyper Tool Makeup Language</option>
-        </select>
-      </p>
-      <p>
-        <button>Send</button>
-      </p>
+      <fieldset>
+        <legend>My first form</legend>
+        <p>
+          <label for="name">Name</label> <br />
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Name"
+          />
+          <br />
+          <label for="email">Email</label> <br />
+          <input id="email" name="email" type="email" required /> <br />
+          <label for="password">Password</label> <br />
+          <input id="password" name="password" type="password" required />
+          <br />
+          <label for="programming">Your programming lvl</label> <br />
+          <input
+            id="programming"
+            name="programming"
+            type="range"
+            min="0"
+            max="10"
+          />
+        </p>
+        <p>
+          What does HTTP stand for?<br />
+          <input
+            id="Hyper Text Translate Protocol"
+            name="answer"
+            type="checkbox"
+            value="1"
+          />
+          <label for="Hyper Text Translate Protocol"
+            >Hyper Text Translate Protocol</label
+          >
+          <br />
+          <input
+            id="Hyper Text Transmission Protocol"
+            name="answer"
+            type="checkbox"
+            value="2"
+          />
+          <label for="Hyper Text Transmission Protocol"
+            >Hyper Text Transmission Protocol</label
+          >
+          <br />
+          <input
+            id="Hyper Text Transfer Protocol"
+            name="answer"
+            type="checkbox"
+            value="3"
+          />
+          <label for="Hyper Text Transfer Protocol"
+            >Hyper Text Transfer Protocol</label
+          >
+          <br />
+        </p>
+        <p>
+          What does HTML stand for? <br />
+          <input id="Hyperlinks" name="answer" type="radio" value="1" />
+          <label for="Hyperlinks">Hyperlinks and Text Markup Language</label>
+          <br />
+          <input id="Home tool" name="answer" type="radio" value="2" />
+          <label for="Home tool">Home Tool Markup Language</label> <br />
+          <input id="Hyper Text" name="answer" type="radio" value="3" />
+          <label for="Hyper Text">Hypertext Text Markup Language</label> <br />
+          <label for="comment">Comment</label><br />
+          <textarea id="comment" name="comment" maxlength="500">
+ Comment</textarea
+          >
+          <br />
+          <label for="What does"> What does HTML stand for? </label> <br />
+          <select id="What does" name="What does">
+            <option disabled selected>Your answer</option>
+            <option>Hyper Text Markup Language</option>
+            <option>Hyper Tool Makeup Language</option>
+          </select>
+        </p>
+        <p>
+          <button>Send</button>
+        </p>
+      </fieldset>
     </form>
     <hr />
     <img src="images/vostochnosibirskaya-layka.jpg" alt="East-siberian laika" />
