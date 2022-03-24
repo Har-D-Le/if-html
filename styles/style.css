@@ -1,27 +1,35 @@
-.main{
+.content {
     margin: 0 auto;
-    max-width: 1440px;
-    max-height: 569px;
+    width: 1280px;
+    height: 569px;
 }
-h1{
+
+h2 {
     width: 306px;
     height: 47px;
     margin: 0;
-    padding: 120px 567px 10px;
+    padding: 120px 487px 10px;
+    text-align: center;
 }
+
 hr {
     width: 100px;
     height: 4px;
-    margin: 10px 644px 88.33px;
+    margin: 10px 590px 88.33px;
     background: #F5BD41;
 }
-.item{
+.item {
     display: inline-block;
     width: 25%;
     float: left;
     text-align: center;
 }
 
-
+.text {
+    display: inline-block;
+    width: 25%;
+    float: right;
+    text-align: center;
+}
 
 
