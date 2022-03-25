@@ -1,13 +1,13 @@
 .content {
     margin: 0 auto;
-    width: 1280px;
+    width: 90%;
     height: 569px;
 }
 
 h2 {
     width: 306px;
     height: 47px;
-    margin: 0;
+    margin: 0 auto;
     padding: 120px 487px 10px;
     text-align: center;
 }
@@ -15,9 +15,10 @@ h2 {
 hr {
     width: 100px;
     height: 4px;
-    margin: 10px 590px 88.33px;
+    margin: 10px auto 88px;
     background: #F5BD41;
 }
+
 .item {
     display: inline-block;
     width: 25%;
@@ -31,5 +32,3 @@ hr {
     float: right;
     text-align: center;
 }
-
-
