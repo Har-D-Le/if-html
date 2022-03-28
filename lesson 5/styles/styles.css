@@ -1,3 +1,5 @@
+@import "fonts.css";
+
 .container {
     margin: 0 auto;
     width: 90%;
@@ -11,3 +13,44 @@
     height: 300px;
     flex-direction: column;
 }
+li {
+    margin-bottom: 23px;
+    flex-wrap: nowrap ;
+}
+
+.about {
+    padding-top: 120px;
+    padding-left: 104px;
+    padding-right: 223px;
+    width: 193px;
+    height: 211px;
+}
+.property {
+    padding-top: 120px;
+    padding-right: 283px;
+    width: 133px;
+    height: 310px;
+}
+
+.support {
+    padding-top: 120px;
+    width: 233px;
+    height: 122px;
+}
+
+.head-item {
+    font-family: Roboto sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.item {
+    font-family: Roboto sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
