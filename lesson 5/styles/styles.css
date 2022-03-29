@@ -1,56 +1,71 @@
 @import "fonts.css";
 
 .container {
-    margin: 0 auto;
-    width: 90%;
-    height: 630px;
-    background: #10367C;
-    display: flex;
+  margin: 0 auto;
+  width: 90%;
+  height: 630px;
+  background: #10367c;
+  display: flex;
+  flex-wrap: wrap;
 }
 .content {
-    display: flex;
-    list-style: none;
-    height: 300px;
-    flex-direction: column;
+  list-style: none;
+  height: 300px;
 }
+
+ul {
+  padding-left: 0;
+}
+
 li {
-    margin-bottom: 23px;
-    flex-wrap: nowrap ;
+  margin-bottom: 23px;
 }
 
 .about {
-    padding-top: 120px;
-    padding-left: 104px;
-    padding-right: 223px;
-    width: 193px;
-    height: 211px;
+  padding-top: 120px;
+  padding-left: 104px;
+  padding-right: 223px;
+  min-width: 193px;
+  height: 211px;
 }
 .property {
-    padding-top: 120px;
-    padding-right: 283px;
-    width: 133px;
-    height: 310px;
+  padding-top: 120px;
+  padding-right: 283px;
+  min-width: 133px;
+  height: 310px;
 }
 
 .support {
-    padding-top: 120px;
-    width: 233px;
-    height: 122px;
+  padding-top: 120px;
+  min-width: 233px;
+  height: 122px;
 }
 
 .head-item {
-    font-family: Roboto sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    font-style: normal;
-    color: #FFFFFF;
+  font-family: Roboto sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
 }
 
 .item {
-    font-family: Roboto sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
-    color: #FFFFFF;
+  font-family: Roboto sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
 }
 
+.fotter {
+  width: 256px;
+  height: 16px;
+  padding: 0;
+  margin-top: 64px;
+  margin-left: 103px;
+  font-family: Roboto sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: #ffffff;
+}
