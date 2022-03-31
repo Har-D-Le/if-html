@@ -1,53 +1,125 @@
 @import "fonts.css";
-.content {
-    margin: 0 auto;
-    width: 1280px;
-    height: 569px;
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/*section offers*/
+
+.content-offers {
+  margin: 0 auto;
+  width: 1280px;
+  height: 569px;
 }
 
 h2 {
-    width: 306px;
-    height: 47px;
-    margin: 0;
-    padding: 120px 487px 10px;
-    text-align: center;
-    font-family: Roboto sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    font-style: normal;
+  width: 306px;
+  height: 47px;
+  margin: 0;
+  padding: 120px 487px 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: normal;
 }
 
 hr {
-    border: 0;
-    width: 100px;
-    height: 4px;
-    margin: 10px 590px 88.33px;
-    background: #F5BD41;
+  border: 0;
+  width: 100px;
+  height: 4px;
+  margin: 10px 590px 88.33px;
+  background: #f5bd41;
 }
 
-.raw {
-    display: flex;
+.raw-offers {
+  display: flex;
 }
 
-.item {
-    width: 25%;
+.item-offers {
+  width: 25%;
 }
 
-.wrap{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-
+.wrap-offers {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
 }
 
-.text {
-    text-align: center;
-    font-family: Roboto sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    font-style: normal;
+.text-offers {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
 }
 
+/*section footter*/
 
+.container-info {
+  margin: 0 auto;
+  width: 90%;
+  height: 630px;
+  background: #10367c;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-info {
+  list-style: none;
+  height: 300px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 23px;
+}
+
+.about {
+  padding-top: 120px;
+  padding-left: 104px;
+  padding-right: 223px;
+  min-width: 193px;
+  height: 211px;
+}
+
+.property {
+  padding-top: 120px;
+  padding-right: 283px;
+  min-width: 133px;
+  height: 310px;
+}
+
+.support {
+  padding-top: 120px;
+  min-width: 233px;
+  height: 122px;
+}
+
+.head-item-info {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.item-info {
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.fotter {
+  width: 256px;
+  height: 16px;
+  padding: 0;
+  margin-top: 64px;
+  margin-left: 103px;
+  margin-right: 400px;
+  font-size: 14px;
+  font-style: normal;
+  color: #ffffff;
+}
