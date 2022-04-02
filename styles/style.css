@@ -24,7 +24,7 @@ h2 {
   font-style: normal;
 }
 
-hr {
+hr.line-offers {
   border: 0;
   width: 100px;
   height: 4px;
@@ -70,11 +70,12 @@ hr {
   height: 300px;
 }
 
-ul {
+ul.content-info {
   padding-left: 0;
 }
 
-li {
+li.head-item-info,
+.item-info {
   margin-bottom: 23px;
 }
 
