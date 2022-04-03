@@ -56,11 +56,14 @@ hr.line-offers {
 
 /*section footter*/
 
+.info {
+  background: #10367c;
+}
+
 .container-info {
   margin: 0 auto;
   width: 90%;
   height: 630px;
-  background: #10367c;
   display: flex;
   flex-wrap: wrap;
 }
