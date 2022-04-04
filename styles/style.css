@@ -1,35 +1,139 @@
-.content {
-    margin: 0 auto;
-    width: 1280px;
-    height: 569px;
+@import "fonts.css";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/*section start*/
+
+/*section offers*/
+
+.content-offers {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  width: 90%;
+  height: 569px;
 }
 
 h2 {
-    width: 306px;
-    height: 47px;
-    margin: 0;
-    padding: 120px 487px 10px;
-    text-align: center;
+  width: 21.3%;
+  height: 47px;
+  margin: 0;
+  padding-top: 120px;
+  padding-left: 39.4%;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: normal;
 }
 
-hr {
-    width: 100px;
-    height: 4px;
-    margin: 10px 590px 88.33px;
-    background: #F5BD41;
-}
-.item {
-    display: inline-block;
-    width: 25%;
-    float: left;
-    text-align: center;
+hr.line-offers {
+  border: 0;
+  width: 6.94%;
+  height: 4px;
+  margin-top: 10px;
+  margin-left: 46.528%;
+  margin-bottom: 88.33px;
+  background: #f5bd41;
 }
 
-.text {
-    display: inline-block;
-    width: 25%;
-    float: right;
-    text-align: center;
+.raw-offers {
+  display: flex;
 }
 
+.item-offers {
+  width: 25%;
+}
 
+.wrap-offers {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.text-offers {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+}
+
+/*section footter*/
+
+.info {
+  background: #10367c;
+}
+
+.container-info {
+  margin: 0 auto;
+  width: 90%;
+  box-sizing: border-box;
+  height: 630px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.content-info {
+  list-style: none;
+  height: 300px;
+}
+
+ul.content-info {
+  padding-left: 0;
+}
+
+li.head-item-info,
+.item-info {
+  margin-bottom: 23px;
+}
+
+.about {
+  padding-top: 120px;
+  padding-left: 7.2%;
+  padding-right: 15.5%;
+  min-width: 193px;
+  height: 211px;
+}
+
+.property {
+  padding-top: 120px;
+  padding-right: 20.4%;
+  min-width: 133px;
+  height: 310px;
+}
+
+.support {
+  padding-top: 120px;
+  min-width: 233px;
+  height: 122px;
+}
+
+.head-item-info {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.item-info {
+  font-size: 20px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.fotter {
+  width: 70%;
+  height: 16px;
+  padding: 0;
+  margin-top: 64px;
+  margin-left: 7.2%;
+  margin-right: 400px;
+  font-size: 14px;
+  font-style: normal;
+  color: #ffffff;
+}
