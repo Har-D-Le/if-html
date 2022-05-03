@@ -3,45 +3,58 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
-/*section start*/
-
-/*section offers*/
-
-.content-offers {
+.container {
+  width: 1440px;
   margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  width: 90%;
-  height: 569px;
 }
 
 h2 {
-  width: 21.3%;
-  height: 47px;
-  margin: 0;
-  padding-top: 120px;
-  padding-left: 39.4%;
-  padding-bottom: 10px;
   text-align: center;
   font-weight: 500;
   font-size: 40px;
   font-style: normal;
 }
 
+/*section start*/
+
+.start {
+  background-image: url("../images/trip-house.svg");
+  background-position: top center;
+  height: 900px;
+}
+
+.header-site {
+  display: flex;
+  margin-bottom: 196px;
+}
+
+/*section offers*/
+
+.content-offers {
+  padding: 0;
+  margin-bottom: 122px;
+}
+
+.title-offers {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
 hr.line-offers {
   border: 0;
-  width: 6.94%;
+  width: 100px;
   height: 4px;
   margin-top: 10px;
-  margin-left: 46.528%;
-  margin-bottom: 88.33px;
+  margin-bottom: 89px;
   background: #f5bd41;
 }
 
-.raw-offers {
+.row-offers {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .item-offers {
@@ -50,6 +63,7 @@ hr.line-offers {
 
 .wrap-offers {
   display: inline-flex;
+  margin-bottom: 48px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -62,25 +76,22 @@ hr.line-offers {
   font-style: normal;
 }
 
-/*section footter*/
+/*section footer*/
 
 .info {
   background: #10367c;
+  padding: 120px 0;
 }
 
 .container-info {
-  margin: 0 auto;
-  width: 90%;
-  box-sizing: border-box;
-  height: 630px;
+  margin: 0 auto 64px;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
 }
 
 .content-info {
   list-style: none;
-  height: 300px;
+  width: 33%;
 }
 
 ul.content-info {
@@ -90,27 +101,6 @@ ul.content-info {
 li.head-item-info,
 .item-info {
   margin-bottom: 23px;
-}
-
-.about {
-  padding-top: 120px;
-  padding-left: 7.2%;
-  padding-right: 15.5%;
-  min-width: 193px;
-  height: 211px;
-}
-
-.property {
-  padding-top: 120px;
-  padding-right: 20.4%;
-  min-width: 133px;
-  height: 310px;
-}
-
-.support {
-  padding-top: 120px;
-  min-width: 233px;
-  height: 122px;
 }
 
 .head-item-info {
@@ -126,13 +116,9 @@ li.head-item-info,
   color: #ffffff;
 }
 
-.fotter {
-  width: 70%;
-  height: 16px;
+.footer {
   padding: 0;
   margin-top: 64px;
-  margin-left: 7.2%;
-  margin-right: 400px;
   font-size: 14px;
   font-style: normal;
   color: #ffffff;
