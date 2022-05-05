@@ -23,7 +23,7 @@ h2 {
 .start {
   background-image: url("../images/trip-house.svg");
   background-position: top center;
-  height: 900px;
+  height: 100vh;
 }
 
 .header-site {
@@ -58,20 +58,82 @@ h2 {
   margin-left: 24px;
 }
 
-.h1-block {
+h1 {
+  margin: 0;
   font-weight: 500;
   font-size: 50px;
   color: #ffffff;
 }
 
+.h1-block {
+  margin: 202px 0 100px;
+}
+
 .label {
+  height: 21px;
   display: flex;
   font-size: 18px;
   color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.label-destination {
+  margin-left: 1%;
+}
+
+.label-check {
+  margin-left: 19%;
 }
 
 form {
   display: flex;
+  height: 64px;
+  width: 93%;
+  margin-bottom: 120px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+#destination {
+  width: 38%;
+  border-radius: 8px;
+  border: none;
+}
+
+#date {
+  text-align: center;
+  width: 21%;
+  border-radius: 8px;
+  border-width: 3px;
+  border-color: #f5bd41;
+}
+
+#rooms {
+  text-align: center;
+  width: 25%;
+  border-radius: 8px;
+  border: none;
+}
+
+.search {
+  width: 16%;
+  border-radius: 8px;
+  border: none;
+  background: #3077c6;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.google-play {
+  margin-right: 17px;
 }
 
 /*section offers*/
