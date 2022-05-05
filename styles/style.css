@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
+  font-style: normal;
 }
 
 .container {
@@ -15,7 +16,6 @@ h2 {
   text-align: center;
   font-weight: 500;
   font-size: 40px;
-  font-style: normal;
 }
 
 /*section start*/
@@ -28,7 +28,50 @@ h2 {
 
 .header-site {
   display: flex;
+  padding-top: 51px;
   margin-bottom: 196px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.text-1 {
+  margin-left: 55.5%;
+  font-size: 24px;
+}
+
+.line-text-1 {
+  width: 50px;
+  margin: 0 auto;
+  border-color: #f5bd41;
+}
+
+.text-2 {
+  margin-left: 24px;
+  font-size: 24px;
+}
+
+.day-night {
+  margin-left: 48px;
+}
+
+.account_circle {
+  margin-left: 24px;
+}
+
+.h1-block {
+  font-weight: 500;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.label {
+  display: flex;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
 }
 
 /*section offers*/
@@ -39,7 +82,7 @@ h2 {
 }
 
 .title-offers {
-  margin: 0;
+  margin: 120px 0 0;
   padding-bottom: 10px;
 }
 
@@ -73,7 +116,6 @@ hr.line-offers {
 .text-offers {
   text-align: center;
   font-size: 24px;
-  font-style: normal;
 }
 
 /*section footer*/
@@ -106,13 +148,11 @@ li.head-item-info,
 .head-item-info {
   font-weight: 500;
   font-size: 20px;
-  font-style: normal;
   color: #ffffff;
 }
 
 .item-info {
   font-size: 20px;
-  font-style: normal;
   color: #ffffff;
 }
 
@@ -120,6 +160,5 @@ li.head-item-info,
   padding: 0;
   margin-top: 64px;
   font-size: 14px;
-  font-style: normal;
   color: #ffffff;
 }

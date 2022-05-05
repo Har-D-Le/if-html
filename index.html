@@ -14,14 +14,30 @@
     <div class="container">
         <div class="header-site">
             <div class="site-logo"><img src="./images/site-logo.svg" alt="triphouse-logo"/></div>
-            <div class="text-1">Stays</div>
+            <div class="text-1">Stays <hr class="line-text-1"> </div>
             <div class="text-2">Attractions</div>
             <div class="day-night"><img src="./images/day-night.svg" alt="day/night icon"></div>
             <div class="account_circle"><img src="./images/account_circle.svg" alt="account circle"></div>
         </div>
-        <div class="pade">
-            <h1>Discover stays <br>
-                to live, work or just relax</h1>
+        <div class="page">
+            <div class="h1-block">
+                <h1>Discover stays <br>
+                    to live, work or just relax</h1>
+            </div>
+            <div class="label">
+                <p>
+                    Your destination or hotel name
+                </p>
+                <p>
+                    Check-in — Check-out
+                </p>
+            </div>
+            <form action="/" method="get">
+                <input id="destination" type="text" name="destination" value="New York">
+                <input id="date" type="date" name="date">
+                <input id="rooms" type="text" name="rooms" value="2 Adults — 0 Children — 1 Room">
+                <button>Search</button>
+            </form>
         </div>
     </div>
 </section>
