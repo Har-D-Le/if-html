@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -18,7 +18,7 @@ h2 {
   font-size: 40px;
 }
 
-/*section start*/
+/*section header*/
 
 .start {
   background-image: url("../images/trip-house.svg");
@@ -28,33 +28,35 @@ h2 {
 
 .header-site {
   display: flex;
+  justify-content: space-between;
   padding-top: 51px;
   margin-bottom: 196px;
   align-items: center;
   color: #ffffff;
 }
 
-.text-1 {
-  margin-left: 55.5%;
+.header-site-navigation {
+  display: flex;
+  align-items: center;
   font-size: 24px;
 }
 
-.line-text-1 {
-  width: 50px;
-  margin: 0 auto;
-  border-color: #f5bd41;
+.nav-item-1 {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #F5BD41;
+  text-underline-offset: 12px;
 }
 
-.text-2 {
+.nav-item-2 {
   margin-left: 24px;
-  font-size: 24px;
 }
 
-.day-night {
+.nav-day-night {
   margin-left: 48px;
 }
 
-.account_circle {
+.nav_account_circle {
   margin-left: 24px;
 }
 
@@ -69,39 +71,43 @@ h1 {
   margin: 202px 0 100px;
 }
 
-.label {
-  height: 21px;
-  display: flex;
+.page-labels {
+  margin-bottom: 24px;
   font-size: 18px;
   color: #ffffff;
-  margin-bottom: 24px;
 }
 
 .label-destination {
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
-.label-check {
-  margin-left: 19%;
+.label-date {
+  margin-left: 22%;
 }
 
 form {
   display: flex;
   height: 64px;
-  width: 93%;
+  width: 100%;
   margin-bottom: 120px;
   border: none;
   border-radius: 8px;
   background: #ffffff;
 }
 
-#destination {
+input {
+  font-size: 18px;
+  color: #383838;
+}
+
+.destination {
   width: 38%;
+  padding-left: 2%;
   border-radius: 8px;
   border: none;
 }
 
-#date {
+.date {
   text-align: center;
   width: 21%;
   border-radius: 8px;
@@ -109,7 +115,7 @@ form {
   border-color: #f5bd41;
 }
 
-#rooms {
+.rooms {
   text-align: center;
   width: 25%;
   border-radius: 8px;
@@ -208,7 +214,7 @@ li.head-item-info,
 }
 
 .head-item-info {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   color: #ffffff;
 }
