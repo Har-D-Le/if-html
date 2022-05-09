@@ -38,14 +38,19 @@ h2 {
 .header-site-navigation {
   display: flex;
   align-items: center;
+  position: relative;
   font-size: 24px;
 }
 
-.nav-item-1 {
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-decoration-color: #F5BD41;
-  text-underline-offset: 12px;
+.nav-item-1::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #F5BD41;
+  bottom: 0px;
+  left: 6px;
 }
 
 .nav-item-2 {
