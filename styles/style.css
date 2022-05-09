@@ -82,7 +82,7 @@ h1 {
 }
 
 .label-date {
-  margin-left: 22%;
+  margin-left: 25%;
 }
 
 form {
@@ -96,6 +96,8 @@ form {
 }
 
 input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   color: #383838;
 }
