@@ -1,109 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="description" content="Booking"/>
-    <meta name="keywords" content="Resort, hotels"/>
-    <meta name="author" content="Dmitry Komzolov"/>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta name="description" content="Booking" />
+    <meta name="keywords" content="Resort, hotels" />
+    <meta name="author" content="Dmitry Komzolov" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson</title>
-    <link rel="stylesheet" href="styles/style.css"/>
-</head>
-<body>
-<section class="start">
-    <div class="container">
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <section class="start">
+      <div class="container">
         <header class="header-site">
-            <div class="site-logo"><img src="./images/site-logo.svg" alt="triphouse-logo"/></div>
-            <nav class="header-site-navigation">
-                <div class="nav-item-1">Stays</div>
-                <div class="nav-item-2">Attractions</div>
-                <div class="nav-day-night"><img src="./images/day-night.svg" alt="day/night icon"></div>
-                <div class="nav_account_circle"><img src="./images/account_circle.svg" alt="account circle"></div>
-            </nav>
+          <div class="site-logo">
+            <img src="./images/site-logo.svg" alt="triphouse-logo" />
+          </div>
+          <nav class="header-site-navigation">
+            <div class="nav-item-1">Stays</div>
+            <div class="nav-item-2">Attractions</div>
+            <div class="nav-day-night">
+              <img src="./images/day-night.svg" alt="day/night icon" />
+            </div>
+            <div class="nav_account_circle">
+              <img src="./images/account_circle.svg" alt="account circle" />
+            </div>
+          </nav>
         </header>
         <div class="page">
-            <div class="h1-block">
-                <h1>Discover stays <br>
-                    to live, work or just relax</h1>
+          <div class="h1-block">
+            <h1>
+              Discover stays <br />
+              to live, work or just relax
+            </h1>
+          </div>
+          <div class="page-labels">
+            <label class="label-destination" for="destination"
+              >Your destination or hotel name</label
+            >
+            <label class="label-date" for="date">Check-in — Check-out</label>
+          </div>
+          <form action="/" method="GET">
+            <input
+              class="destination"
+              id="destination"
+              type="text"
+              name="destination"
+              placeholder="New York"
+            />
+            <input class="date" id="date" type="date" name="date" />
+            <input
+              class="rooms"
+              id="rooms"
+              type="text"
+              name="rooms"
+              value="2 Adults — 0 Children — 1 Room"
+            />
+            <button class="search">Search</button>
+          </form>
+          <div class="apps">
+            <div class="google-play">
+              <img
+                src="./images/google_play_badge.svg"
+                alt="google-play-badge"
+              />
             </div>
-            <div class="page-labels">
-                <label class="label-destination" for="destination">Your destination or hotel name</label>
-                <label class="label-date" for="date">Check-in — Check-out</label>
+            <div class="app-store">
+              <img src="./images/app_store.svg" alt="app-store" />
             </div>
-            <form action="/" method="GET">
-                <input class="destination" id="destination" type="text" name="destination" placeholder="New York">
-                <input class="date" id="date" type="date" name="date">
-                <input class="rooms" id="rooms" type="text" name="rooms" value="2 Adults — 0 Children — 1 Room">
-                <button class="search">Search</button>
-            </form>
-            <div class="apps">
-                <div class="google-play"><img src="./images/google_play_badge.svg" alt="google-play-badge"></div>
-                <div class="app-store"><img src="./images/app_store.svg" alt="app-store"></div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
-<section class="offers">
-    <div class="container">
+      </div>
+    </section>
+    <section class="offers">
+      <div class="container">
         <div class="content-offers">
-            <h2 class="title-offers">What do we offer</h2>
-            <hr class="line-offers"/>
-            <div class="row-offers">
-                <div class="item-offers">
-                    <div class="wrap-offers">
-                        <img src="images/headphones.svg" alt="headphones"/>
-                    </div>
-                    <div class="text-offers">Support 24/7</div>
-                </div>
-                <div class="item-offers">
-                    <div class="wrap-offers">
-                        <img src="images/message-sign.svg" alt="message-sign"/>
-                    </div>
-                    <div class="text-offers">Communicate directly</div>
-                </div>
-                <div class="item-offers">
-                    <div class="wrap-offers">
-                        <img src="images/computer-sign.svg" alt="computer-sign"/>
-                    </div>
-                    <div class="text-offers">Book online</div>
-                </div>
-                <div class="item-offers">
-                    <div class="wrap-offers">
-                        <img src="images/thumb.svg" alt="thumb"/>
-                    </div>
-                    <div class="text-offers">Real guest reviews</div>
-                </div>
+          <h2 class="title-offers">What do we offer</h2>
+          <hr class="line-offers" />
+          <div class="row-offers">
+            <div class="item-offers">
+              <div class="wrap-offers">
+                <img src="images/headphones.svg" alt="headphones" />
+              </div>
+              <div class="text-offers">Support 24/7</div>
             </div>
+            <div class="item-offers">
+              <div class="wrap-offers">
+                <img src="images/message-sign.svg" alt="message-sign" />
+              </div>
+              <div class="text-offers">Communicate directly</div>
+            </div>
+            <div class="item-offers">
+              <div class="wrap-offers">
+                <img src="images/computer-sign.svg" alt="computer-sign" />
+              </div>
+              <div class="text-offers">Book online</div>
+            </div>
+            <div class="item-offers">
+              <div class="wrap-offers">
+                <img src="images/thumb.svg" alt="thumb" />
+              </div>
+              <div class="text-offers">Real guest reviews</div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-<footer class="info">
-    <div class="container">
+      </div>
+    </section>
+    <footer class="info">
+      <div class="container">
         <div class="container-info">
-            <ul class="content-info about">
-                <li class="head-item-info">About</li>
-                <li class="item-info">How Triphouse works</li>
-                <li class="item-info">Careers</li>
-                <li class="item-info">Privacy</li>
-                <li class="item-info">Terms</li>
-            </ul>
-            <ul class="content-info property">
-                <li class="head-item-info">Property types</li>
-                <li class="item-info">Guest houses</li>
-                <li class="item-info">Hotels</li>
-                <li class="item-info">Apartments</li>
-                <li class="item-info">Villas</li>
-                <li class="item-info">Holiday homes</li>
-                <li class="item-info">Hostels</li>
-            </ul>
-            <ul class="content-info support">
-                <li class="head-item-info">Support</li>
-                <li class="item-info">Contact Customer Service</li>
-                <li class="item-info">FAQ</li>
-            </ul>
+          <ul class="content-info about">
+            <li class="head-item-info">About</li>
+            <li class="item-info">How Triphouse works</li>
+            <li class="item-info">Careers</li>
+            <li class="item-info">Privacy</li>
+            <li class="item-info">Terms</li>
+          </ul>
+          <ul class="content-info property">
+            <li class="head-item-info">Property types</li>
+            <li class="item-info">Guest houses</li>
+            <li class="item-info">Hotels</li>
+            <li class="item-info">Apartments</li>
+            <li class="item-info">Villas</li>
+            <li class="item-info">Holiday homes</li>
+            <li class="item-info">Hostels</li>
+          </ul>
+          <ul class="content-info support">
+            <li class="head-item-info">Support</li>
+            <li class="item-info">Contact Customer Service</li>
+            <li class="item-info">FAQ</li>
+          </ul>
         </div>
         <div class="footer">© 2020 Triphouse, Inc. All rights reserved</div>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
