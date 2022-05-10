@@ -1,39 +1,179 @@
 @import "fonts.css";
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/*section header*/
+
+.start {
+  background-image: url("../images/trip-house.svg");
+  background-position: top center;
+  height: 100vh;
+}
+
+.header-site {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51px;
+  margin-bottom: 196px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.header-site-navigation {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 24px;
+}
+
+.nav-item-1::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+  bottom: 0px;
+  left: 6px;
+}
+
+.nav-item-2 {
+  margin-left: 24px;
+}
+
+.nav-day-night {
+  margin-left: 48px;
+}
+
+.nav_account_circle {
+  margin-left: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.h1-block {
+  margin: 202px 0 100px;
+}
+
+.page-labels {
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.label-destination {
+  margin-left: 2%;
+}
+
+.label-date {
+  margin-left: 25%;
+}
+
+form {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  margin-bottom: 120px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #383838;
+}
+
+.destination {
+  width: 38%;
+  padding-left: 2%;
+  border-radius: 8px;
+  border: none;
+}
+
+.date {
+  text-align: center;
+  width: 21%;
+  border-radius: 8px;
+  border-width: 3px;
+  border-color: #f5bd41;
+}
+
+.rooms {
+  text-align: center;
+  width: 25%;
+  border-radius: 8px;
+  border: none;
+}
+
+.search {
+  width: 16%;
+  border-radius: 8px;
+  border: none;
+  background: #3077c6;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.google-play {
+  margin-right: 17px;
 }
 
 /*section offers*/
 
 .content-offers {
-  margin: 0 auto;
-  width: 1280px;
-  height: 569px;
+  padding: 0;
+  margin-bottom: 122px;
 }
 
-h2 {
-  width: 306px;
-  height: 47px;
-  margin: 0;
-  padding: 120px 487px 10px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 40px;
-  font-style: normal;
+.title-offers {
+  margin: 120px 0 0;
+  padding-bottom: 10px;
 }
 
 hr.line-offers {
   border: 0;
   width: 100px;
   height: 4px;
-  margin: 10px 590px 88.33px;
+  margin-top: 10px;
+  margin-bottom: 89px;
   background: #f5bd41;
 }
 
-.raw-offers {
+.row-offers {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .item-offers {
@@ -42,6 +182,7 @@ hr.line-offers {
 
 .wrap-offers {
   display: inline-flex;
+  margin-bottom: 48px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -51,26 +192,24 @@ hr.line-offers {
 .text-offers {
   text-align: center;
   font-size: 24px;
-  font-style: normal;
 }
 
-/*section footter*/
+/*section footer*/
 
 .info {
   background: #10367c;
+  padding: 120px 0;
 }
 
 .container-info {
-  margin: 0 auto;
-  width: 90%;
-  height: 630px;
+  margin: 0 auto 64px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .content-info {
   list-style: none;
-  height: 300px;
+  width: 33%;
 }
 
 ul.content-info {
@@ -82,48 +221,20 @@ li.head-item-info,
   margin-bottom: 23px;
 }
 
-.about {
-  padding-top: 120px;
-  padding-left: 104px;
-  padding-right: 223px;
-  min-width: 193px;
-  height: 211px;
-}
-
-.property {
-  padding-top: 120px;
-  padding-right: 283px;
-  min-width: 133px;
-  height: 310px;
-}
-
-.support {
-  padding-top: 120px;
-  min-width: 233px;
-  height: 122px;
-}
-
 .head-item-info {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
-  font-style: normal;
   color: #ffffff;
 }
 
 .item-info {
   font-size: 20px;
-  font-style: normal;
   color: #ffffff;
 }
 
-.fotter {
-  width: 256px;
-  height: 16px;
+.footer {
   padding: 0;
   margin-top: 64px;
-  margin-left: 103px;
-  margin-right: 400px;
   font-size: 14px;
-  font-style: normal;
   color: #ffffff;
 }
