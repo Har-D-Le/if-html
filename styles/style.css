@@ -13,6 +13,13 @@ body {
   margin: 0 auto;
 }
 
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 h2 {
   text-align: center;
   font-weight: 500;
@@ -34,6 +41,11 @@ h2 {
   margin-bottom: 196px;
   align-items: center;
   color: #ffffff;
+}
+
+.site-logo {
+  width: 205px;
+  height: 40px;
 }
 
 .header-site-navigation {
@@ -60,10 +72,14 @@ h2 {
 
 .nav-day-night {
   margin-left: 48px;
+  height: 30px;
+  width: 30px;
 }
 
 .nav_account_circle {
   margin-left: 24px;
+  height: 40px;
+  width: 40px;
 }
 
 h1 {
@@ -147,7 +163,14 @@ input {
 }
 
 .google-play {
+  width: 135px;
+  height: 40px;
   margin-right: 17px;
+}
+
+.app-store {
+  width: 120px;
+  height: 40px;
 }
 
 /*section offers*/
@@ -187,6 +210,26 @@ hr.line-offers {
   align-items: center;
   width: 100%;
   height: 100px;
+}
+
+.headphones {
+  width: 75px;
+  height: 92px;
+}
+
+.message-sign {
+  width: 83px;
+  height: 83px;
+}
+
+.computer-sign {
+  width: 100px;
+  height: 67px;
+}
+
+.thumb {
+  width: 92px;
+  height: 83px;
 }
 
 .text-offers {
