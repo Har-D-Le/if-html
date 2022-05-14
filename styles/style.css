@@ -62,7 +62,7 @@ h2 {
   width: 50px;
   height: 4px;
   background-color: #f5bd41;
-  bottom: 0px;
+  bottom: 0;
   left: 6px;
 }
 
@@ -196,6 +196,7 @@ hr.line-offers {
 
 .row-offers {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
@@ -244,6 +245,10 @@ hr.line-offers {
   padding: 120px 0;
 }
 
+.footer-logo {
+  display: none;
+}
+
 .container-info {
   margin: 0 auto 64px;
   display: flex;
@@ -280,4 +285,92 @@ li.head-item-info,
   margin-top: 64px;
   font-size: 14px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /*section offers*/
+  .title-offers {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding-bottom: 0;
+  }
+
+  .line-offers {
+    display: none;
+  }
+
+  .content-offers {
+    margin-bottom: 40px;
+  }
+
+  .item-offers {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .wrap-offers {
+    margin-bottom: 16px;
+  }
+
+  .headphones {
+    width: 52px;
+    height: 64px;
+  }
+
+  .message-sign {
+    width: 58px;
+    height: 58px;
+  }
+
+  .computer-sign {
+    width: 70px;
+    height: 47px;
+  }
+
+  .thumb {
+    width: 64px;
+    height: 58px;
+  }
+
+  .text-offers {
+    font-size: 15px;
+  }
+
+  /*section footer*/
+  .info {
+    padding: 40px 0;
+  }
+
+  .footer-logo {
+    display: flex;
+    margin: 0 auto 40px;
+    width: 98px;
+    height: 19px;
+    fill: #ffffff;
+  }
+
+  .container-info {
+    margin: 0;
+  }
+
+  .content-info {
+    margin: 0;
+  }
+
+  .head-item-info {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .item-info {
+    display: none;
+  }
+
+  .footer {
+    margin: 0;
+    text-align: center;
+  }
 }
