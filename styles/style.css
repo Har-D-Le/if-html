@@ -13,6 +13,13 @@ body {
   margin: 0 auto;
 }
 
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 h2 {
   text-align: center;
   font-weight: 500;
@@ -36,6 +43,11 @@ h2 {
   color: #ffffff;
 }
 
+.site-logo {
+  width: 205px;
+  height: 40px;
+}
+
 .header-site-navigation {
   display: flex;
   align-items: center;
@@ -50,7 +62,7 @@ h2 {
   width: 50px;
   height: 4px;
   background-color: #f5bd41;
-  bottom: 0px;
+  bottom: 0;
   left: 6px;
 }
 
@@ -60,10 +72,14 @@ h2 {
 
 .nav-day-night {
   margin-left: 48px;
+  height: 30px;
+  width: 30px;
 }
 
 .nav_account_circle {
   margin-left: 24px;
+  height: 40px;
+  width: 40px;
 }
 
 h1 {
@@ -147,7 +163,14 @@ input {
 }
 
 .google-play {
+  width: 135px;
+  height: 40px;
   margin-right: 17px;
+}
+
+.app-store {
+  width: 120px;
+  height: 40px;
 }
 
 /*section offers*/
@@ -173,6 +196,7 @@ hr.line-offers {
 
 .row-offers {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
@@ -189,6 +213,26 @@ hr.line-offers {
   height: 100px;
 }
 
+.headphones {
+  width: 75px;
+  height: 92px;
+}
+
+.message-sign {
+  width: 83px;
+  height: 83px;
+}
+
+.computer-sign {
+  width: 100px;
+  height: 67px;
+}
+
+.thumb {
+  width: 92px;
+  height: 83px;
+}
+
 .text-offers {
   text-align: center;
   font-size: 24px;
@@ -199,6 +243,10 @@ hr.line-offers {
 .info {
   background: #10367c;
   padding: 120px 0;
+}
+
+.footer-logo {
+  display: none;
 }
 
 .container-info {
@@ -237,4 +285,93 @@ li.head-item-info,
   margin-top: 64px;
   font-size: 14px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /*section offers*/
+  .title-offers {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding-bottom: 0;
+  }
+
+  .line-offers {
+    display: none;
+  }
+
+  .content-offers {
+    margin-bottom: 40px;
+  }
+
+  .item-offers {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .wrap-offers {
+    margin-bottom: 16px;
+  }
+
+  .headphones {
+    width: 52px;
+    height: 64px;
+  }
+
+  .message-sign {
+    width: 58px;
+    height: 58px;
+  }
+
+  .computer-sign {
+    width: 70px;
+    height: 47px;
+  }
+
+  .thumb {
+    width: 64px;
+    height: 58px;
+  }
+
+  .text-offers {
+    font-size: 15px;
+  }
+
+  /*section footer*/
+  .info {
+    padding: 40px 0;
+  }
+
+  .footer-logo {
+    display: flex;
+    margin: 0 auto 40px;
+    width: 98px;
+    height: 19px;
+    fill: #ffffff;
+  }
+
+  .container-info {
+    margin: 0;
+  }
+
+  .content-info {
+    margin: 0;
+  }
+
+  .head-item-info {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 32px;
+    text-decoration-line: underline;
+  }
+
+  .item-info {
+    display: none;
+  }
+
+  .footer {
+    margin: 0;
+    text-align: center;
+  }
 }
