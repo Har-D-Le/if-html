@@ -119,6 +119,10 @@ h2 {
   width: 40px;
 }
 
+.nav_menu {
+  display: none;
+}
+
 .page {
   position: relative;
   margin-bottom: 120px;
@@ -338,7 +342,6 @@ li.head-item-info,
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  /*section offers*/
 
   .col-ss--1 {
     width: 16.6%;
@@ -358,6 +361,48 @@ li.head-item-info,
   .col-ss-6 {
     width: 100%;
   }
+
+  /*section header*/
+
+  .header-site {
+    margin: 0 0 40px;
+    padding: 0;
+  }
+
+  .site-logo {
+    height: 24px;
+    width: 122px;
+    padding: 12px 0;
+  }
+
+  .nav-item-1,
+  .nav-item-2 {
+    display: none;
+  }
+
+  .nav-day-night {
+    margin: 0 16px 0 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  .nav_account_circle {
+    margin: 0 16px 0 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav_menu {
+    display: flex;
+    width: 24px;
+    height: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  /*section offers*/
 
   .title-offers {
     font-size: 28px;
