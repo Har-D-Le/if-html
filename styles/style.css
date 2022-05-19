@@ -1,5 +1,42 @@
 @import "fonts.css";
 
+.col-1 {
+  width: 8.3%;
+}
+.col-2 {
+  width: 16.6%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3%;
+}
+.col-5 {
+  width: 41.6%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.3%;
+}
+.col-8 {
+  width: 66.6%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.3%;
+}
+.col-11 {
+  width: 91.6%;
+}
+.col-12 {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -62,7 +99,7 @@ h2 {
   width: 50px;
   height: 4px;
   background-color: #f5bd41;
-  bottom: 0;
+  bottom: -5px;
   left: 6px;
 }
 
@@ -82,6 +119,11 @@ h2 {
   width: 40px;
 }
 
+.page {
+  position: relative;
+  margin-bottom: 120px;
+}
+
 h1 {
   margin: 0;
   font-weight: 500;
@@ -90,25 +132,32 @@ h1 {
 }
 
 .h1-block {
-  margin: 202px 0 100px;
+  margin: 0 0 100px;
 }
 
-.page-labels {
-  margin-bottom: 24px;
+label {
+  font-weight: 400;
   font-size: 18px;
   color: #ffffff;
 }
 
 .label-destination {
-  margin-left: 2%;
+  display: inline-block;
+  position: relative;
+  top: -23px;
+  left: 2.2%;
 }
 
 .label-date {
-  margin-left: 25%;
+  display: inline-block;
+  position: relative;
+  top: -23px;
+  left: 20%;
 }
 
 form {
   display: flex;
+  position: relative;
   height: 64px;
   width: 100%;
   margin-bottom: 120px;
@@ -125,7 +174,7 @@ input {
 }
 
 .destination {
-  width: 38%;
+  width: 37%;
   padding-left: 2%;
   border-radius: 8px;
   border: none;
@@ -141,7 +190,7 @@ input {
 
 .rooms {
   text-align: center;
-  width: 25%;
+  width: 26%;
   border-radius: 8px;
   border: none;
 }
@@ -159,7 +208,6 @@ input {
 .apps {
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
 }
 
 .google-play {
@@ -181,16 +229,21 @@ input {
 }
 
 .title-offers {
-  margin: 120px 0 0;
-  padding-bottom: 10px;
+  margin: 120px 0 104px;
 }
 
-hr.line-offers {
-  border: 0;
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
   width: 100px;
   height: 4px;
-  margin-top: 10px;
-  margin-bottom: 89px;
+  top: 68px;
+  left: calc(50.2% - 50px);
   background: #f5bd41;
 }
 
@@ -198,10 +251,6 @@ hr.line-offers {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-}
-
-.item-offers {
-  width: 25%;
 }
 
 .wrap-offers {
@@ -290,6 +339,26 @@ li.head-item-info,
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   /*section offers*/
+
+  .col-ss--1 {
+    width: 16.6%;
+  }
+  .col-ss-2 {
+    width: 33.2%;
+  }
+  .col-ss-3 {
+    width: 50%;
+  }
+  .col-ss-4 {
+    width: 66.6%;
+  }
+  .col-ss-5 {
+    width: 83.2%;
+  }
+  .col-ss-6 {
+    width: 100%;
+  }
+
   .title-offers {
     font-size: 28px;
     margin-top: 24px;
@@ -297,7 +366,12 @@ li.head-item-info,
     padding-bottom: 0;
   }
 
-  .line-offers {
+  .row-offers {
+    display: flex;
+    justify-content: center;
+  }
+
+  h2::after {
     display: none;
   }
 
@@ -306,7 +380,7 @@ li.head-item-info,
   }
 
   .item-offers {
-    width: 100%;
+    justify-content: center;
     margin-bottom: 32px;
   }
 
