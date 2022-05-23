@@ -3,36 +3,47 @@
 .col-1 {
   width: 8.3%;
 }
+
 .col-2 {
   width: 16.6%;
 }
+
 .col-3 {
   width: 25%;
 }
+
 .col-4 {
   width: 33.3%;
 }
+
 .col-5 {
   width: 41.6%;
 }
+
 .col-6 {
   width: 50%;
 }
+
 .col-7 {
   width: 58.3%;
 }
+
 .col-8 {
   width: 66.6%;
 }
+
 .col-9 {
   width: 75%;
 }
+
 .col-10 {
   width: 83.3%;
 }
+
 .col-11 {
   width: 91.6%;
 }
+
 .col-12 {
   width: 100%;
 }
@@ -345,28 +356,31 @@ li.head-item-info,
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-
   .col-ss-1 {
     width: 16.6%;
   }
+
   .col-ss-2 {
     width: 33.2%;
   }
+
   .col-ss-3 {
     width: 50%;
   }
+
   .col-ss-4 {
     width: 66.6%;
   }
+
   .col-ss-5 {
     width: 83.2%;
   }
+
   .col-ss-6 {
     width: 100%;
   }
 
   /*section header*/
-
   .start {
     background-image: url("../images/castelmezzano.svg");
     background-position: top right;
@@ -502,7 +516,6 @@ li.head-item-info,
   }
 
   /*section offers*/
-
   .title-offers {
     font-size: 28px;
     margin-top: 24px;
