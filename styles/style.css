@@ -60,6 +60,7 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .sprite {
@@ -254,7 +255,7 @@ h2 {
   position: relative;
 }
 
-h2::after {
+.offers-h2::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -380,9 +381,13 @@ li.head-item-info,
     width: 100%;
   }
 
+  h2 {
+    font-size: 28px;
+  }
+
   /*section header*/
   .start {
-    background-image: url("../images/castelmezzano.svg");
+    background-size: 960px 533px;
     background-position: top right;
     height: 533px;
   }
@@ -438,8 +443,8 @@ li.head-item-info,
     position: relative;
     flex-wrap: wrap;
     background-color: #f5bd41;
-    padding: 8px;
     row-gap: 8px;
+    padding: 8px;
     margin-bottom: 32px;
   }
 
@@ -494,7 +499,7 @@ li.head-item-info,
   .label-m-date-check-out {
     position: absolute;
     top: 6px;
-    right: 90px;
+    right: 65px;
     font-weight: 400;
     font-size: 12px;
     color: #383838;
@@ -517,7 +522,6 @@ li.head-item-info,
 
   /*section offers*/
   .title-offers {
-    font-size: 28px;
     margin-top: 24px;
     margin-bottom: 32px;
     padding-bottom: 0;
@@ -528,7 +532,7 @@ li.head-item-info,
     justify-content: center;
   }
 
-  h2::after {
+  .offers-h2::after {
     display: none;
   }
 
