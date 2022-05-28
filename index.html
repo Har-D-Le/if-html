@@ -14,6 +14,79 @@
       <symbol
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 48 48"
+        id="arrow"
+      >
+        <g filter="url(#filter0_d_1_139)">
+          <circle cx="24" cy="20" r="20" fill="#F3F3F4"></circle>
+          <path
+            d="M19.9412 29.8235L26.1 21.6118C26.6333 20.9007 26.6333 19.9229 26.1 19.2118L19.9412 11"
+            stroke="#383838"
+            stroke-width="2"
+          ></path>
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_1_139"
+            x="0"
+            y="0"
+            width="48"
+            height="48"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            ></feColorMatrix>
+            <feOffset dy="4"></feOffset>
+            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+            ></feColorMatrix>
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_1_139"
+            ></feBlend>
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_1_139"
+              result="shape"
+            ></feBlend>
+          </filter>
+        </defs>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+        id="loupe"
+      >
+        <path
+          d="M11.4351 10.0629H10.7124L10.4563 9.81589C11.3528 8.77301 11.8925 7.4191 11.8925 5.94625C11.8925 2.66209 9.23042 0 5.94625 0C2.66209 0 0 2.66209 0 5.94625C0 9.23042 2.66209 11.8925 5.94625 11.8925C7.4191 11.8925 8.77301 11.3528 9.81589 10.4563L10.0629 10.7124V11.4351L14.6369 16L16 14.6369L11.4351 10.0629ZM5.94625 10.0629C3.66838 10.0629 1.82962 8.22413 1.82962 5.94625C1.82962 3.66838 3.66838 1.82962 5.94625 1.82962C8.22413 1.82962 10.0629 3.66838 10.0629 5.94625C10.0629 8.22413 8.22413 10.0629 5.94625 10.0629Z"
+          fill="#BFBFBF"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 16"
+        id="menu"
+      >
+        <path
+          d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"
+          fill="white"
+        ></path>
+      </symbol>
+      <symbol
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 40 40"
         id="account_circle"
       >
@@ -388,7 +461,7 @@
     </svg>
     <section class="start">
       <div class="container">
-        <header class="header-site">
+        <header class="col-ss-6 header-site">
           <svg class="site-logo">
             <use href="#site-logo" />
           </svg>
@@ -401,22 +474,22 @@
             <svg class="nav_account_circle">
               <use href="#account_circle" />
             </svg>
+            <svg class="nav_menu">
+              <use href="#menu" />
+            </svg>
           </nav>
         </header>
-        <div class="page">
+        <div class="col-12 col-ss-6 page">
           <div class="h1-block">
             <h1>
               Discover stays <br />
               to live, work or just relax
             </h1>
           </div>
-          <div class="page-labels">
+          <form class="desktop-form" action="/" method="GET">
             <label class="label-destination" for="destination"
               >Your destination or hotel name</label
             >
-            <label class="label-date" for="date">Check-in — Check-out</label>
-          </div>
-          <form action="/" method="GET">
             <input
               class="destination"
               id="destination"
@@ -424,6 +497,7 @@
               name="destination"
               placeholder="New York"
             />
+            <label class="label-date" for="date">Check-in — Check-out</label>
             <input class="date" id="date" type="date" name="date" />
             <input
               class="rooms"
@@ -433,6 +507,45 @@
               value="2 Adults — 0 Children — 1 Room"
             />
             <button class="search">Search</button>
+          </form>
+          <form class="col-ss-6 m-form" action="/" method="GET">
+            <svg class="loupe">
+              <use href="#loupe" />
+            </svg>
+            <input
+              class="col-ss-6 m-destination"
+              id="m-destination"
+              type="text"
+              name="m-destination"
+              placeholder="Your destination or hotel name"
+            />
+            <div class="wrap-m-date">
+              <label class="label-m-date-check-in" for="m-date-check-in"
+                >Check-in date</label
+              >
+              <input
+                class="m-date"
+                id="m-date-check-in"
+                type="date"
+                name="m-date-check-in"
+              />
+              <label class="label-m-date-check-out" for="m-date-check-out"
+                >Check-out date</label
+              >
+              <input
+                class="m-date"
+                id="m-date-check-out"
+                type="date"
+                name="m-date-check-out"
+              />
+            </div>
+            <input
+              class="col-ss-6 m-rooms"
+              id="m-rooms"
+              type="text"
+              name="m-rooms"
+            />
+            <button class="col-ss-6 m-search">Search</button>
           </form>
           <div class="apps">
             <svg class="google-play">
@@ -448,10 +561,11 @@
     <section class="offers">
       <div class="container">
         <div class="content-offers">
-          <h2 class="title-offers">What do we offer</h2>
-          <hr class="line-offers" />
+          <h2 class="title-offers">
+            <div class="offers-h2">What do we offer</div>
+          </h2>
           <div class="row-offers">
-            <div class="item-offers">
+            <div class="col-3 col-ss-4 item-offers">
               <div class="wrap-offers">
                 <svg class="headphones">
                   <use href="#headphones" />
@@ -459,7 +573,7 @@
               </div>
               <div class="text-offers">Support 24/7</div>
             </div>
-            <div class="item-offers">
+            <div class="col-3 col-ss-4 item-offers">
               <div class="wrap-offers">
                 <svg class="message-sign">
                   <use href="#message-sign" />
@@ -467,7 +581,7 @@
               </div>
               <div class="text-offers">Communicate directly</div>
             </div>
-            <div class="item-offers">
+            <div class="col-3 col-ss-4 item-offers">
               <div class="wrap-offers">
                 <svg class="computer-sign">
                   <use href="#computer-sign" />
@@ -475,7 +589,7 @@
               </div>
               <div class="text-offers">Book online</div>
             </div>
-            <div class="item-offers">
+            <div class="col-3 col-ss-4 item-offers">
               <div class="wrap-offers">
                 <svg class="thumb">
                   <use href="#thumb" />
