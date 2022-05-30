@@ -76,6 +76,12 @@ h2 {
   font-size: 40px;
 }
 
+a {
+  text-decoration: none;
+  cursor: none;
+  color: #ffffff;
+}
+
 /*section header*/
 
 .start {
@@ -105,19 +111,41 @@ h2 {
   font-size: 24px;
 }
 
-.nav-item-1::after {
+.nav-item-1:after {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 50px;
+  width: 0px;
   height: 4px;
   background-color: #f5bd41;
   bottom: -5px;
   left: 6px;
 }
 
+.nav-item-1:hover:after {
+  width: 50px;
+  transition: all 700ms;
+}
+
 .nav-item-2 {
+  position: relative;
   margin-left: 24px;
+}
+
+.nav-item-2:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0px;
+  height: 4px;
+  background-color: #f5bd41;
+  bottom: -14px;
+  left: 5px;
+}
+
+.nav-item-2:hover:after {
+  width: 103px;
+  transition: all 600ms;
 }
 
 .nav-day-night {
@@ -126,10 +154,50 @@ h2 {
   width: 30px;
 }
 
+.link-nav-day-night {
+  position: relative;
+}
+
+.link-nav-day-night:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0px;
+  height: 4px;
+  background-color: #f5bd41;
+  bottom: -10px;
+  right: 5px;
+}
+
+.link-nav-day-night:hover:after {
+  width: 20px;
+  transition: all 800ms;
+}
+
 .nav_account_circle {
   margin-left: 24px;
   height: 40px;
   width: 40px;
+}
+
+.link-nav_account_circle {
+  position: relative;
+}
+
+.link-nav_account_circle:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0px;
+  height: 4px;
+  background-color: #f5bd41;
+  bottom: -5px;
+  right: 5px;
+}
+
+.link-nav_account_circle:hover:after {
+  width: 29px;
+  transition: all 750ms;
 }
 
 .nav_menu {
@@ -306,6 +374,52 @@ h2 {
   font-size: 24px;
 }
 
+/*section homes*/
+.homes {
+  background-color: #eaf0f9;
+}
+
+.homes-h2 {
+  margin: 0 0 106px;
+  padding: 120px 0 0;
+}
+
+.homes-content {
+  display: flex;
+  padding: 0 0 120px;
+  column-gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.wrap-homes-img {
+  position: relative;
+}
+
+.homes-img {
+  width: 100%;
+}
+
+.m-arrow {
+  display: none;
+}
+
+.arrow {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 44.5%;
+  right: -6.8%;
+}
+
+.homes-item {
+  margin: 24px 0 24px;
+  color: #3077c6;
+}
+
+.homes-item-location {
+  color: #bfbfbf;
+}
+
 /*section footer*/
 
 .info {
@@ -404,7 +518,9 @@ li.head-item-info,
   }
 
   .nav-item-1,
-  .nav-item-2 {
+  .nav-item-2,
+  .link-nav-day-night:after,
+  .link-nav_account_circle:after {
     display: none;
   }
 
@@ -415,6 +531,8 @@ li.head-item-info,
   }
 
   .nav_account_circle {
+    display: flex;
+    align-items: center;
     margin: 0 16px 0 0;
     width: 24px;
     height: 24px;
@@ -571,6 +689,43 @@ li.head-item-info,
 
   .text-offers {
     font-size: 15px;
+  }
+
+  /*section homes */
+  .homes-h2 {
+    margin: 0;
+    padding: 40px 0 32px;
+  }
+
+  .homes-content {
+    padding: 0 0 56px;
+  }
+
+  .m-arrow {
+    display: flex;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    bottom: 46%;
+    right: -7.2%;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .homes-content-wrap-hostel,
+  .homes-content-wrap-villa {
+    display: none;
+  }
+
+  .homes-item {
+    margin: 8px 0 4px;
+    font-size: 12px;
+  }
+
+  .homes-item-location {
+    font-size: 12px;
   }
 
   /*section footer*/
