@@ -615,17 +615,15 @@
             </h1>
           </div>
           <form class="desktop-form" action="/" method="GET">
-            <label class="label-destination" for="destination"
-              >Your destination or hotel name</label
-            >
             <input
               class="destination"
               id="destination"
               type="text"
               name="destination"
-              placeholder="New York"
             />
-            <label class="label-date" for="date">Check-in — Check-out</label>
+            <label class="label-destination" for="destination"
+              >Your destination or hotel name</label
+            >
             <input class="date" id="date" type="date" name="date" />
             <input
               class="rooms"
@@ -634,6 +632,7 @@
               name="rooms"
               value="2 Adults — 0 Children — 1 Room"
             />
+            <label class="label-date" for="date">Check-in — Check-out</label>
             <button class="search">Search</button>
           </form>
           <form class="col-ss-6 m-form" action="/" method="GET">
@@ -791,8 +790,10 @@
         </nav>
         <div class="destinations-content">
           <div class="col-3 col-ss-3 destinations-content-wrapper">
-            <div class="destinations-img-wrapper">
+            <div class="destinations-hover-wrapper">
               <button class="destinations-hover-button">Book now</button>
+            </div>
+            <div class="destinations-img-wrapper">
               <img
                 class="destinations-content-img"
                 src="images/maldives.svg"
@@ -802,8 +803,10 @@
             <div class="destinations-content-wrapper-item_name">Maldives</div>
           </div>
           <div class="col-3 col-ss-3 destinations-content-wrapper">
-            <div class="destinations-img-wrapper">
+            <div class="destinations-hover-wrapper">
               <button class="destinations-hover-button">Book now</button>
+            </div>
+            <div class="destinations-img-wrapper">
               <img
                 class="destinations-content-img"
                 src="images/spain.svg"
@@ -816,8 +819,10 @@
             <div class="destinations-content-wrapper-item_name">Spain</div>
           </div>
           <div class="col-3 col-ss-3 destinations-content-wrapper Norway">
-            <div class="destinations-img-wrapper">
+            <div class="destinations-hover-wrapper">
               <button class="destinations-hover-button">Book now</button>
+            </div>
+            <div class="destinations-img-wrapper">
               <img
                 class="destinations-content-img"
                 src="images/norway.svg"
@@ -827,8 +832,10 @@
             <div class="destinations-content-wrapper-item_name">Norway</div>
           </div>
           <div class="col-3 col-ss-3 destinations-content-wrapper Island">
-            <div class="destinations-img-wrapper">
+            <div class="destinations-hover-wrapper">
               <button class="destinations-hover-button">Book now</button>
+            </div>
+            <div class="destinations-img-wrapper">
               <img
                 class="destinations-content-img"
                 src="images/island.svg"
@@ -871,15 +878,15 @@
         <h2>Guests reviews</h2>
         <div class="col-12 col-ss-6 reviews-content">
           <div class="col-4 col-ss-6 reviews-content-wrapper Bali">
-            <div class="reviews-img-wrapper">
-              <img
-                class="reviews-img"
-                src="images/bali.svg"
-                alt="Ubud Bali Resort&SPA"
-              />
-            </div>
-            <div class="reviews-content-wrapper-price">
-              <span class="price">From 250 USD</span>
+            <div class="reviews-upper_block">
+              <div class="reviews-img-wrapper">
+                <img
+                  class="reviews-img"
+                  src="images/bali.svg"
+                  alt="Ubud Bali Resort&SPA"
+                />
+              </div>
+              <div class="reviews-price">From 250 USD</div>
             </div>
             <div class="reviews-content-wrapper-title">
               <div class="reviews-content-wrapper-title-wrapper">
@@ -927,17 +934,17 @@
             </div>
           </div>
           <div class="col-4 col-ss-6 reviews-content-wrapper Rotterdam">
-            <div class="reviews-img-wrapper">
-              <img
-                class="reviews-img"
-                src="images/rotterdam.png"
-                alt="King Kong Hostel"
-              />
+            <div class="reviews-upper_block">
+              <div class="reviews-img-wrapper">
+                <img
+                  class="reviews-img"
+                  src="images/rotterdam.png"
+                  alt="King Kong Hostel"
+                />
+              </div>
+              <div class="reviews-price">From 40 USD</div>
             </div>
-            <div class="reviews-content-wrapper-price">
-              From 40 USD
-              <div class="price"></div>
-            </div>
+
             <div class="reviews-content-wrapper-title">
               <div class="reviews-content-wrapper-title-wrapper">
                 <div class="reviews-text place">King Kong Hostel</div>
@@ -968,19 +975,18 @@
             </div>
           </div>
           <div class="col-4 col-ss-6 reviews-content-wrapper Marocco">
-            <div class="reviews-img-wrapper">
-              <svg class="reviews-arrow">
-                <use href="#arrow" />
-              </svg>
-              <img
-                class="reviews-img"
-                src="images/ourika.png"
-                alt="Rokoko Hotel"
-              />
-            </div>
-            <div class="reviews-content-wrapper-price">
-              From 100 USD
-              <div class="price"></div>
+            <div class="reviews-upper_block">
+              <div class="reviews-img-wrapper">
+                <svg class="reviews-arrow">
+                  <use href="#arrow" />
+                </svg>
+                <img
+                  class="reviews-img"
+                  src="images/ourika.png"
+                  alt="Rokoko Hotel"
+                />
+              </div>
+              <div class="reviews-price">From 100 USD</div>
             </div>
             <div class="reviews-content-wrapper-title">
               <div class="reviews-content-wrapper-title-wrapper">
