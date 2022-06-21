@@ -624,7 +624,17 @@
             <label class="label-destination" for="destination"
               >Your destination or hotel name</label
             >
-            <input class="date" id="date" type="date" name="date" />
+            <div class="desktop-form-date-wrapper">
+              <input class="date" id="check-in-date" type="date" name="date" />
+              <label class="label-date-check-in" for="check-in-date"
+                >Check-in
+              </label>
+              <input class="date" id="check-out-date" type="date" name="date" />
+              <label class="label-date-check-out" for="check-out-date"
+                >Check-out</label
+              >
+              <span class="dash">—</span>
+            </div>
             <input
               class="rooms"
               id="rooms"
@@ -632,7 +642,6 @@
               name="rooms"
               value="2 Adults — 0 Children — 1 Room"
             />
-            <label class="label-date" for="date">Check-in — Check-out</label>
             <button class="search">Search</button>
           </form>
           <form class="col-ss-6 m-form" action="/" method="GET">
@@ -916,20 +925,6 @@
                   of the people are incredibly helpful and generous with their
                   time and advice.
                 </p>
-                <div class="m-reviews-navigation">
-                  <ul class="m-reviews-nav-item">
-                    <li></li>
-                  </ul>
-                  <ul class="m-reviews-nav-item">
-                    <li></li>
-                  </ul>
-                  <ul class="m-reviews-nav-item">
-                    <li></li>
-                  </ul>
-                  <ul class="m-reviews-nav-item">
-                    <li></li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>

@@ -248,13 +248,6 @@ input:focus + .label-destination {
   color: #ffffff;
 }
 
-.label-date {
-  position: absolute;
-  top: -43px;
-  left: 41%;
-  color: #ffffff;
-}
-
 .desktop-form {
   display: flex;
   position: relative;
@@ -280,12 +273,41 @@ input {
   border: none;
 }
 
-.date {
-  text-align: center;
+.desktop-form-date-wrapper {
+  position: relative;
+  display: flex;
   width: 21%;
+  border: 3px solid #f5bd41;
   border-radius: 8px;
-  border-width: 3px;
-  border-color: #f5bd41;
+}
+
+.label-date-check-in {
+  position: absolute;
+  top: -2.6rem;
+  right: 2rem;
+  color: #ffffff;
+}
+
+.label-date-check-out {
+  position: absolute;
+  top: -2.6rem;
+  left: 1rem;
+  color: #ffffff;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.date {
+  border: none;
+}
+
+.dash {
+  position: absolute;
+  top: -2.6rem;
+  left: 7rem;
+  color: #ffffff;
 }
 
 .rooms {
@@ -1020,6 +1042,14 @@ li.head-item-info,
     font-size: 12px;
   }
 
+  .destinations-hover-wrapper {
+    display: none;
+  }
+
+  .destinations-content-wrapper:hover .destinations-img-wrapper {
+    opacity: 1;
+  }
+
   .arrow-down {
     display: none;
   }
@@ -1103,17 +1133,6 @@ li.head-item-info,
 
   .reviews-content-wrapper-title-text {
     margin-bottom: 32px;
-  }
-
-  .m-reviews-navigation {
-    display: flex;
-    flex-direction: row;
-    width: 3.5rem;
-    transform: translateX(138px);
-  }
-
-  .m-reviews-nav-item {
-    padding: 0 0 0 0.5rem;
   }
 
   /*section footer*/
