@@ -615,18 +615,26 @@
             </h1>
           </div>
           <form class="desktop-form" action="/" method="GET">
-            <label class="label-destination" for="destination"
-              >Your destination or hotel name</label
-            >
             <input
               class="destination"
               id="destination"
               type="text"
               name="destination"
-              placeholder="New York"
             />
-            <label class="label-date" for="date">Check-in — Check-out</label>
-            <input class="date" id="date" type="date" name="date" />
+            <label class="label-destination" for="destination"
+              >Your destination or hotel name</label
+            >
+            <div class="desktop-form-date-wrapper">
+              <input class="date" id="check-in-date" type="date" name="date" />
+              <label class="label-date-check-in" for="check-in-date"
+                >Check-in
+              </label>
+              <input class="date" id="check-out-date" type="date" name="date" />
+              <label class="label-date-check-out" for="check-out-date"
+                >Check-out</label
+              >
+              <span class="dash">—</span>
+            </div>
             <input
               class="rooms"
               id="rooms"
@@ -791,8 +799,10 @@
         </nav>
         <div class="destinations-content">
           <div class="col-3 col-ss-3 destinations-content-wrapper">
-            <div class="destinations-img-wrapper">
+            <div class="destinations-hover-wrapper">
               <button class="destinations-hover-button">Book now</button>
+            </div>
+            <div class="destinations-img-wrapper">
               <img
                 class="destinations-content-img"
                 src="images/maldives.svg"
@@ -802,20 +812,26 @@
             <div class="destinations-content-wrapper-item_name">Maldives</div>
           </div>
           <div class="col-3 col-ss-3 destinations-content-wrapper">
-            <div class="destinations-img-wrapper">
+            <div class="destinations-hover-wrapper">
               <button class="destinations-hover-button">Book now</button>
+            </div>
+            <div class="destinations-img-wrapper">
               <img
                 class="destinations-content-img"
                 src="images/spain.svg"
                 alt="Spain"
               />
-              <svg class="m-destinations-arrow"><use href="#arrow" /></svg>
+              <svg class="m-destinations-arrow">
+                <use href="#arrow" />
+              </svg>
             </div>
             <div class="destinations-content-wrapper-item_name">Spain</div>
           </div>
           <div class="col-3 col-ss-3 destinations-content-wrapper Norway">
-            <div class="destinations-img-wrapper">
+            <div class="destinations-hover-wrapper">
               <button class="destinations-hover-button">Book now</button>
+            </div>
+            <div class="destinations-img-wrapper">
               <img
                 class="destinations-content-img"
                 src="images/norway.svg"
@@ -825,8 +841,10 @@
             <div class="destinations-content-wrapper-item_name">Norway</div>
           </div>
           <div class="col-3 col-ss-3 destinations-content-wrapper Island">
-            <div class="destinations-img-wrapper">
+            <div class="destinations-hover-wrapper">
               <button class="destinations-hover-button">Book now</button>
+            </div>
+            <div class="destinations-img-wrapper">
               <img
                 class="destinations-content-img"
                 src="images/island.svg"
@@ -835,7 +853,9 @@
             </div>
             <div class="destinations-content-wrapper-item_name">Island</div>
           </div>
-          <svg class="arrow-down"><use href="#arrow-down" /></svg>
+          <svg class="arrow-down">
+            <use href="#arrow-down" />
+          </svg>
         </div>
       </div>
     </section>
@@ -859,6 +879,142 @@
           <svg class="sign-up-close">
             <use href="#close" />
           </svg>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2>Guests reviews</h2>
+        <div class="col-12 col-ss-6 reviews-content">
+          <div class="col-4 col-ss-6 reviews-content-wrapper Bali">
+            <div class="reviews-upper_block">
+              <div class="reviews-img-wrapper">
+                <img
+                  class="reviews-img"
+                  src="images/bali.svg"
+                  alt="Ubud Bali Resort&SPA"
+                />
+              </div>
+              <div class="reviews-price">From 250 USD</div>
+            </div>
+            <div class="reviews-content-wrapper-title">
+              <div class="reviews-content-wrapper-title-wrapper">
+                <div class="reviews-text place">Ubud Bali Resort&SPA</div>
+                <div class="reviews-text country">Bali, Indonesia</div>
+              </div>
+              <img
+                class="reviews-rating"
+                src="images/score-Bali.svg"
+                alt="Bali-rating"
+              />
+              <span class="reviews-number">1324 reviews</span>
+              <div class="reviews-user">
+                <svg class="reviews-svg">
+                  <use href="#account_circle" />
+                </svg>
+                <span class="reviews-user-name">Hanna Ivanova</span>
+                <span class="reviews-user-nation"
+                  ><img
+                    class="user-nation"
+                    src="images/ua.svg"
+                    alt="Ukrain flag"
+                /></span>
+                <p class="reviews-content-wrapper-title-text">
+                  Great location, really pleasant and clean rooms, but the thing
+                  that makes this such a good place to stay are the staff. All
+                  of the people are incredibly helpful and generous with their
+                  time and advice.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-ss-6 reviews-content-wrapper Rotterdam">
+            <div class="reviews-upper_block">
+              <div class="reviews-img-wrapper">
+                <img
+                  class="reviews-img"
+                  src="images/rotterdam.png"
+                  alt="King Kong Hostel"
+                />
+              </div>
+              <div class="reviews-price">From 40 USD</div>
+            </div>
+
+            <div class="reviews-content-wrapper-title">
+              <div class="reviews-content-wrapper-title-wrapper">
+                <div class="reviews-text place">King Kong Hostel</div>
+                <div class="reviews-text country">Rotterdam, Netherlands</div>
+              </div>
+              <img
+                class="reviews-rating"
+                src="images/score-rotterdam.svg"
+                alt="Rotterdam-rating"
+              />
+              <span class="reviews-number">2016 reviews</span>
+              <div class="reviews-user">
+                <svg class="reviews-svg">
+                  <use href="#account_circle" />
+                </svg>
+                <span class="reviews-user-name">Adam Smith</span>
+                <span class="reviews-user-nation"
+                  ><img class="user-nation" src="images/USA.svg" alt="USA flag"
+                /></span>
+                <p class="reviews-content-wrapper-title-text">
+                  I've been in this hostel for a month and here is the best
+                  hostel of all Excellent management of excellent and ethical
+                  staff and bedrooms Bathrooms are always clean and excellent
+                  Most importantly, those who work here are kind and
+                  good-natured.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-ss-6 reviews-content-wrapper Marocco">
+            <div class="reviews-upper_block">
+              <div class="reviews-img-wrapper">
+                <svg class="reviews-arrow">
+                  <use href="#arrow" />
+                </svg>
+                <img
+                  class="reviews-img"
+                  src="images/ourika.png"
+                  alt="Rokoko Hotel"
+                />
+              </div>
+              <div class="reviews-price">From 100 USD</div>
+            </div>
+            <div class="reviews-content-wrapper-title">
+              <div class="reviews-content-wrapper-title-wrapper">
+                <div class="reviews-text place">Rokoko Hotel</div>
+                <div class="reviews-text country">Ourika, Marocco</div>
+              </div>
+              <img
+                class="reviews-rating"
+                src="images/score-marocco.svg"
+                alt="Marocco-rating"
+              />
+              <span class="reviews-number">815 reviews</span>
+              <div class="reviews-user">
+                <svg class="reviews-svg">
+                  <use href="#account_circle" />
+                </svg>
+                <span class="reviews-user-name">Anika Messer</span>
+                <span class="reviews-user-nation"
+                  ><img
+                    class="user-nation"
+                    src="images/Germany.svg"
+                    alt="Germany flag"
+                /></span>
+                <p class="reviews-content-wrapper-title-text">
+                  Efficient, friendly, professional, and appropriately
+                  attentive. Great hotel in a great location. Easy access to all
+                  the surrounding historical sites. Staff is fantastic. Will
+                  definitely stay at this location during my next stay in
+                  Marocco.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

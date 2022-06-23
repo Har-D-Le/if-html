@@ -233,19 +233,19 @@ h1 {
 label {
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
+  position: absolute;
 }
 
 .label-destination {
-  position: absolute;
-  top: -43px;
-  left: 2.2%;
+  top: 22px;
+  left: 24px;
+  color: #383838;
 }
 
-.label-date {
-  position: absolute;
-  top: -43px;
-  left: 41%;
+input:focus + .label-destination {
+  transform: translateY(-4rem);
+  transition: 0.2s ease-in;
+  color: #ffffff;
 }
 
 .desktop-form {
@@ -273,12 +273,41 @@ input {
   border: none;
 }
 
-.date {
-  text-align: center;
+.desktop-form-date-wrapper {
+  position: relative;
+  display: flex;
   width: 21%;
+  border: 3px solid #f5bd41;
   border-radius: 8px;
-  border-width: 3px;
-  border-color: #f5bd41;
+}
+
+.label-date-check-in {
+  position: absolute;
+  top: -2.6rem;
+  right: 2rem;
+  color: #ffffff;
+}
+
+.label-date-check-out {
+  position: absolute;
+  top: -2.6rem;
+  left: 1rem;
+  color: #ffffff;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.date {
+  border: none;
+}
+
+.dash {
+  position: absolute;
+  top: -2.6rem;
+  left: 7rem;
+  color: #ffffff;
 }
 
 .rooms {
@@ -462,23 +491,29 @@ h2 {
   margin-bottom: 209px;
 }
 
-.destinations-content-wrapper:hover .destinations-hover-button {
-  display: block;
+.destinations-content-wrapper {
+  position: relative;
 }
 
-.destinations-content-wrapper:hover .destinations-content-img {
-  box-shadow: 0px 4px 70px #38383880;
+.destinations-content-wrapper:hover .destinations-img-wrapper {
+  opacity: 0.5;
 }
 
 .destinations-img-wrapper {
   position: relative;
 }
 
-.destinations-hover-button {
-  display: none;
+.destinations-hover-wrapper {
   position: absolute;
-  top: calc(50% - 24px);
+  height: calc(100% - 3.7rem);
+  width: 100%;
+  background-color: #383838;
+}
+
+.destinations-hover-button {
+  position: absolute;
   left: calc(50% - 64px);
+  top: calc(50% - 24px);
   height: 48px;
   width: 128px;
   font-size: 18px;
@@ -558,6 +593,109 @@ h2 {
   position: absolute;
   top: 26px;
   right: 26px;
+}
+
+/*section reviews*/
+
+.reviews-content {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.reviews-upper_block {
+  position: relative;
+}
+
+.reviews-img {
+  width: 100%;
+}
+
+.reviews-img-wrapper {
+  position: relative;
+}
+
+.reviews-arrow {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 45%;
+  right: -5%;
+}
+
+.reviews-price {
+  position: absolute;
+  width: calc(100% - 1.5rem);
+  top: calc(100% - 48px);
+  font-size: 18px;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  height: 32px;
+  background-color: #383838;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+.reviews-content-wrapper-title {
+  position: relative;
+  height: 340px;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  background-color: #eaf0f9;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838;
+}
+.reviews-content-wrapper-title-wrapper {
+  position: relative;
+}
+
+.reviews-rating {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.reviews-number {
+  position: absolute;
+  top: 4rem;
+  right: 1.5rem;
+  font-size: 14px;
+  color: #bfbfbf;
+}
+
+.reviews-text {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #3077c6;
+}
+
+.country {
+  font-weight: 400;
+}
+
+.reviews-user {
+  position: relative;
+}
+
+.reviews-svg {
+  height: 64px;
+  width: 64px;
+  margin-top: 0.5rem;
+}
+
+.reviews-user-name {
+  position: absolute;
+  top: 0.8rem;
+  left: 5.3rem;
+}
+
+.reviews-user-nation {
+  position: absolute;
+  top: 3.1rem;
+  left: 5.3rem;
+}
+
+.reviews-content-wrapper-title-text {
+  margin: 16px 0 66px;
 }
 
 /*section footer*/
@@ -706,6 +844,7 @@ li.head-item-info,
 
   .m-form {
     display: flex;
+    box-sizing: border-box;
     position: relative;
     flex-wrap: wrap;
     background-color: #f5bd41;
@@ -903,6 +1042,14 @@ li.head-item-info,
     font-size: 12px;
   }
 
+  .destinations-hover-wrapper {
+    display: none;
+  }
+
+  .destinations-content-wrapper:hover .destinations-img-wrapper {
+    opacity: 1;
+  }
+
   .arrow-down {
     display: none;
   }
@@ -967,6 +1114,25 @@ li.head-item-info,
     font-size: 14px;
     background-color: #ffffff;
     color: #3077c6;
+  }
+
+  /*section reviews*/
+
+  .Rotterdam,
+  .Marocco {
+    display: none;
+  }
+
+  .reviews-price {
+    display: none;
+  }
+
+  .reviews-content-wrapper-title {
+    font-size: 15px;
+  }
+
+  .reviews-content-wrapper-title-text {
+    margin-bottom: 32px;
   }
 
   /*section footer*/
